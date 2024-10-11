@@ -1,10 +1,10 @@
 import streamlit as st
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage
 
-load_dotenv()
+#load_dotenv()
 
 st.title("langchain-streamlit-app")
 
