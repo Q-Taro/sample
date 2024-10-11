@@ -20,6 +20,12 @@ for message in st.session_state.messages:
 prompt=st.chat_input("What is up?")
 
 if prompt:
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.markdown(prompt)
+    with st.chat_message("assistant")
+        response = "Konnichiha"
+        st.markdown(response)
 
 
 #with st.chat_message("assistant")
