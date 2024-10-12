@@ -26,9 +26,9 @@ if prompt:
     with st.chat_message("assistant"):
         response = "Konnichiha"
         st.markdown(response)
+    st.session_state.messages.append({"role": "assistant", "content": response})
 
-
-st.session_state.messages.append({"role": "assistant", "content": response})
+    
 #with st.chat_message("assistant")
 #    chat = ChatOpenAI(model_name=os.environ["OPENAI_API_MODEL"]),
 #    temperature=os.environ["OPENAI_API_TEMPERATURE"])
