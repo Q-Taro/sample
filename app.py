@@ -10,6 +10,7 @@ PASSWORD = "57$%2439Mhndsf%#90sdfB"
 def create_agent_chain():
     chat = ChatOpenAI(
         model_name=os.environ["OPENAI_API_MODEL"],
+        openai_api_base=os.getenv("OPENAI_API_BASE"),  # For Azure OpenAI API
         temperature=os.environ["OPENAI_API_TEMPERATURE"],
         streaming=True,
     )
