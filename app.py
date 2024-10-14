@@ -7,7 +7,6 @@ import os
 # Password for access
 PASSWORD = "57$%2439Mhndsf%#90sdfB"
 
-
 def create_agent_chain():
     chat = ChatOpenAI(
         model_name=os.environ["OPENAI_API_MODEL"],
