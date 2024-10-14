@@ -3,6 +3,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.prompts import MessagesPlaceholder
 from langchain.chat_models import ChatOpenAI
 import os
+from langchain.agents import AgentType, initialize_agent, load_tools
 
 
 # Password for access
